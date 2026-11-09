@@ -1,0 +1,451 @@
+@keyframes heartFloat {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) rotate(var(--rotate, 0deg)) scale(1);
+    opacity: var(--opacity, 0.5);
+  }
+  50% {
+    transform: translate3d(var(--drift, 12px), var(--rise, -24px), 0)
+      rotate(calc(var(--rotate, 0deg) + 10deg)) scale(1.1);
+    opacity: calc(var(--opacity, 0.5) * 0.65);
+  }
+}
+
+@keyframes heartRise {
+  0% {
+    transform: translate3d(0, 12vh, 0) rotate(0deg) scale(var(--scale, 1));
+    opacity: 0;
+  }
+  12% {
+    opacity: var(--opacity, 0.6);
+  }
+  55% {
+    transform: translate3d(var(--sway, 24px), -55vh, 0)
+      rotate(var(--spin, 16deg)) scale(var(--scale, 1));
+  }
+  88% {
+    opacity: var(--opacity, 0.6);
+  }
+  100% {
+    transform: translate3d(calc(var(--sway, 24px) * -0.5), -115vh, 0)
+      rotate(calc(var(--spin, 16deg) * -1)) scale(var(--scale, 1));
+    opacity: 0;
+  }
+}
+
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.18;
+    transform: scale(0.65) rotate(0deg);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.08) rotate(22deg);
+  }
+}
+
+@keyframes softBob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+@keyframes softFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-13px) rotate(1.5deg);
+  }
+}
+
+@keyframes wobble {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-5deg);
+  }
+  40% {
+    transform: rotate(4deg);
+  }
+  60% {
+    transform: rotate(-3deg);
+  }
+  80% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes walkWaddle {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2.2deg);
+  }
+  25% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(0) rotate(2.2deg);
+  }
+  75% {
+    transform: translateY(-5px) rotate(0deg);
+  }
+}
+
+@keyframes hugRock {
+  0%,
+  100% {
+    transform: rotate(-1.5deg) translateY(0);
+  }
+  50% {
+    transform: rotate(1.5deg) translateY(-4px);
+  }
+}
+
+@keyframes hugBreathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.018);
+  }
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.09);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.06);
+  }
+  56% {
+    transform: scale(1);
+  }
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.55;
+  }
+  70% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.2) rotate(-12deg);
+    opacity: 0;
+  }
+  65% {
+    transform: scale(1.12) rotate(4deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+@keyframes floatAway {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.8);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(var(--drift, 10px), -70px, 0) scale(1.15);
+    opacity: 0;
+  }
+}
+
+@keyframes confettiFall {
+  0% {
+    transform: translate3d(0, -12vh, 0) rotate(0deg);
+    opacity: 0;
+  }
+  7% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate3d(var(--drift, 30px), 112vh, 0)
+      rotate(var(--spin, 540deg));
+    opacity: 0.85;
+  }
+}
+
+@keyframes sparklePop {
+  0%,
+  100% {
+    transform: scale(0.4) rotate(0deg);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1.15) rotate(35deg);
+    opacity: 1;
+  }
+}
+
+@keyframes caretBlink {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  55%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 250% center;
+  }
+}
+
+@keyframes scrollDot {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(14px);
+    opacity: 0;
+  }
+}
+
+@keyframes gradientDrift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(18px, -22px, 0) scale(1.08);
+  }
+}
+
+@keyframes twirl {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes eqBounce {
+  0%,
+  100% {
+    transform: scaleY(0.35);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.eq-bar {
+  display: inline-block;
+  width: 2px;
+  border-radius: 999px;
+  background: currentColor;
+  transform-origin: bottom;
+  animation: eqBounce 1s ease-in-out infinite;
+}
+
+.heart-particle {
+  position: absolute;
+  animation: heartFloat var(--duration, 7s) ease-in-out var(--delay, 0s)
+    infinite;
+  will-change: transform, opacity;
+}
+
+.heart-rise {
+  position: absolute;
+  bottom: -8vh;
+  animation: heartRise var(--duration, 12s) linear var(--delay, 0s) infinite;
+  will-change: transform, opacity;
+}
+
+.sparkle-particle {
+  position: absolute;
+  animation: sparklePop var(--duration, 3.4s) ease-in-out var(--delay, 0s)
+    infinite;
+  will-change: transform, opacity;
+}
+
+.confetti-piece {
+  position: absolute;
+  top: 0;
+  width: var(--size, 9px);
+  height: var(--height, 15px);
+  background: var(--color, #e98299);
+  border-radius: var(--radius, 2px);
+  animation: confettiFall var(--duration, 5.5s) linear var(--delay, 0s)
+    infinite;
+  will-change: transform, opacity;
+}
+
+.css-bob {
+  animation: softBob var(--duration, 5s) ease-in-out var(--delay, 0s) infinite;
+}
+
+.css-float {
+  animation: softFloat var(--duration, 7s) ease-in-out var(--delay, 0s)
+    infinite;
+}
+
+.css-wobble {
+  animation: wobble 0.55s ease-in-out;
+}
+
+.css-walk {
+  animation: walkWaddle 0.62s ease-in-out infinite;
+}
+
+.css-hug-rock {
+  animation: hugRock 4.6s ease-in-out infinite;
+}
+
+.css-hug-breathe {
+  animation: hugBreathe 4.6s ease-in-out infinite;
+}
+
+.css-heartbeat {
+  animation: heartbeat 2.6s ease-in-out infinite;
+}
+
+.hug-heart {
+  position: absolute;
+  opacity: 0;
+  animation: floatAway var(--duration, 3.4s) ease-out var(--delay, 0s) infinite;
+  will-change: transform, opacity;
+}
+
+.css-twinkle {
+  animation: twinkle var(--duration, 3.6s) ease-in-out var(--delay, 0s)
+    infinite;
+}
+
+.css-shimmer {
+  background-size: 250% auto;
+  animation: shimmer 7s linear infinite;
+}
+
+.css-gradient-drift {
+  animation: gradientDrift var(--duration, 12s) ease-in-out infinite;
+}
+
+.css-pulse-ring {
+  animation: pulseRing 2.8s ease-out infinite;
+}
+
+.typing-caret {
+  display: inline-block;
+  width: 2px;
+  height: 1.15em;
+  margin-left: 2px;
+  vertical-align: -0.15em;
+  background: var(--color-rose);
+  border-radius: 2px;
+  animation: caretBlink 0.9s step-end infinite;
+}
+
+.scroll-dot {
+  animation: scrollDot 1.9s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-8deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-4deg);
+  }
+}
+
+.css-wave {
+  display: inline-block;
+  transform-origin: 70% 70%;
+  animation: wave 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .heart-particle,
+  .heart-rise,
+  .sparkle-particle,
+  .confetti-piece,
+  .css-bob,
+  .css-float,
+  .css-wobble,
+  .css-walk,
+  .css-hug-rock,
+  .css-hug-breathe,
+  .css-heartbeat,
+  .hug-heart,
+  .eq-bar,
+  .css-twinkle,
+  .css-shimmer,
+  .css-gradient-drift,
+  .css-pulse-ring,
+  .typing-caret,
+  .scroll-dot,
+  .css-wave {
+    animation: none !important;
+  }
+
+  .heart-particle,
+  .sparkle-particle {
+    opacity: 0.35;
+  }
+
+  .confetti-piece {
+    display: none;
+  }
+}
